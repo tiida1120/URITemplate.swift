@@ -3,7 +3,6 @@ import Spectre
 import PathKit
 import URITemplate
 
-
 let testCases: ((ContextType) -> Void) = {
   let files = [
     "extended-tests",

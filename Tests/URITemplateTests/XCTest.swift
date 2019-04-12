@@ -30,7 +30,6 @@ public func testURITemplate() {
       }
     }
 
-    #if swift(>=4.0)
     $0.describe("Codable") {
       $0.it("decodes from a JSON representation") {
         // JSON adapted from https://api.github.com
@@ -64,7 +63,6 @@ public func testURITemplate() {
         try expect(decodedTemplates) == templates
       }
     }
-    #endif
 
     $0.it("has a hashValue") {
       let template1 = URITemplate(template:"{scheme}://{hostname}/")
